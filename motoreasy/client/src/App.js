@@ -15,7 +15,10 @@ const App = () => {
 		e.preventDefault();
 		newData.filter((num) => {
 			const nothing = [];
-			num.tyres[0].size.includes(search) ? newNum.push(num) : nothing.push(num);
+			num.tyres[0].size.includes(search) ||
+			num.name.toLowerCase().includes(search.toLowerCase())
+				? newNum.push(num)
+				: nothing.push(num);
 			return newNum;
 		});
 		setFilter(newNum);
