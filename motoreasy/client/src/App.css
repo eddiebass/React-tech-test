@@ -1,0 +1,82 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Raleway", sans-serif;
+	font-size: 0.7rem;
+}
+.section-title {
+	text-align: center;
+	margin: 40px;
+}
+
+h1 {
+	color: rgb(62, 62, 65);
+	font-size: 3rem;
+	margin-bottom: 15px;
+	padding-left: 15px;
+	text-align: left;
+}
+span {
+	color: rgb(44, 155, 87);
+	font-size: 3rem;
+	margin-bottom: 15px;
+}
+
+h2 {
+	color: rgb(62, 62, 65);
+	font-size: 2.5rem;
+	margin-bottom: 15px;
+	padding-left: 15px;
+	text-align: left;
+}
+h4 {
+	color: rgb(116, 116, 119);
+	font-size: 1.5rem;
+	margin-bottom: 15px;
+	padding-left: 15px;
+	text-align: left;
+	font-weight: 300;
+}
+
+p {
+	padding: 1rem 2rem;
+	background-color: rgb(50, 50, 51);
+	color: white;
+	font-size: 1.5rem;
+	font-family: "Roboto", sans-serif;
+}
+
+form {
+	margin: 50px 0;
+}
+
+.next-previous {
+	display: flex;
+	justify-content: space-between;
+}
+
+input {
+	height: 60px;
+	width: 600px;
+	font-size: 1.7rem;
+	padding: 0 12px;
+	border: 2px solid rgb(44, 155, 87);
+	color: rgb(62, 62, 65);
+}
+
+button {
+	height: 60px;
+	width: 200px;
+	font-size: 1.7rem;
+	padding: 5px;
+	border: 2px solid rgb(44, 155, 87);
+	background-color: white;
+	color: rgb(44, 155, 87);
+	margin-left: 5px;
+}
+button:hover {
+	background-color: rgb(44, 155, 87);
+	color: white;
+	border: 2px solid rgb(21, 85, 45);
+}

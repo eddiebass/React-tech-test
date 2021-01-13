@@ -1,0 +1,41 @@
+/* CONTAINERS */
+
+.container {
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+	margin: 20px auto;
+}
+.sub-container {
+	width: 100%;
+	background-color: rgba(233, 240, 243, 0.089);
+	padding: 5px;
+}
+
+.para-container {
+	display: flex;
+	flex-direction: row;
+}
+
+/* SEASONS */
+
+.para {
+	width: 50%;
+	background-color: rgb(92, 91, 92);
+}
+
+.green {
+	background-color: rgb(44, 155, 87);
+}
+.winter {
+	background-color: rgb(80, 121, 197);
+}
+
+.summer {
+	background-color: rgb(194, 162, 18);
+}
+
+/* ALLIGN TEXT OF PRICE */
+.justo {
+	text-align: center;
+}
