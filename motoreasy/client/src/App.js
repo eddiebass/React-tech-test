@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useFetch } from "./useFetch";
 import Tyre from "./Tyre";
 import Search from "./Search";
+import HomePage from "./images/homepage.svg";
 import "./App.css";
 
 const App = () => {
@@ -24,8 +25,6 @@ const App = () => {
 		setFilter(newNum);
 		setSearch("");
 	};
-
-	const submitHandler = (e) => {};
 
 	const previousHandler = () => {
 		setPage((previous) => {
@@ -57,20 +56,25 @@ const App = () => {
 		});
 	}
 
-	/* {} */
+	const resetHandler = () => {
+		setFilter([]);
+	};
+
 	return (
 		<div className="section-title">
-			{loading ? (
-				"Loading..."
-			) : (
-				<h1>
-					motor<span>easy</span>
-				</h1>
-			)}
+			<div className="header">
+				{loading ? (
+					"Loading..."
+				) : (
+					<h1>
+						motor<span>easy</span>
+					</h1>
+				)}
+				<img onClick={resetHandler} src={HomePage} alt="home page" />
+			</div>
 			<Search
 				search={search}
 				setSearch={setSearch}
-				submitHandler={submitHandler}
 				searchHandle={searchHandle}
 			/>
 

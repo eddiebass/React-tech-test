@@ -10,6 +10,16 @@
 	margin: 40px;
 }
 
+.header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.header img {
+	width: 3%;
+	cursor: pointer;
+}
+
 h1 {
 	color: rgb(62, 62, 65);
 	font-size: 3rem;
